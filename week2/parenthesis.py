@@ -3,11 +3,11 @@ def main():
     for _ in range(N):
         print(format(check(str(input()))))
 
-def check(str):
+def check(s):
     stack = []
-    for s in str:
-        if s == '(':
-            stack.append(s)
+    for c in s:
+        if c == '(':
+            stack.append(c)
         elif(len(stack) != 0):
             stack.pop()
         else:
